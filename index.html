@@ -16,7 +16,7 @@
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="css/resume.min.css" rel="stylesheet">
+    <link href="css/resume.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132921949-1"></script>
     <script>
@@ -30,11 +30,39 @@
   <body id="page-top">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Konuralp YOLGECEN</span>
-        <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="photo profile">
-        </span>
       </a>
+      <div id="my_carousel" class="carousel slide" data-ride="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="#page-top" class="js-scroll-trigger">
+              <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile3.jpg" alt="photo profile3">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="#page-top" class="js-scroll-trigger">
+              <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile2.jpg" alt="photo profile2">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="#page-top" class="js-scroll-trigger">
+              <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="photo profile">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="#page-top" class="js-scroll-trigger">
+              <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile4.jpg" alt="photo profile4">
+            </a>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#my_carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#my_carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -59,10 +87,12 @@
             <a class="nav-link js-scroll-trigger" href="https://paypal.me/konuralpyolgecen" target="_blank">Faire un don <i class="fab fa-paypal"></i></a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="index.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Choisir la langue</a>
+            <a class="nav-link dropdown-toggle" href="index.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Choisir la langue
+              <span class="flag-icon flag-icon-fr" id="french"> </span>
+            </a>
             <div class="dropdown-menu" aria-labelledby="dropdown09">
               <a class="dropdown-item" href="indexTurkish.html"><span class="flag-icon flag-icon-tr"> </span>  Türkçe</a>
-              <a class="dropdown-item" href="index.html"><span class="flag-icon flag-icon-fr"> </span>  Français</a>
               <a class="dropdown-item" href="index.html"><span class="flag-icon flag-icon-gb"> </span>  English</a>
             </div>
           </li>
@@ -75,17 +105,18 @@
           <h1 class="mb-0">Konuralp
             <span class="text-primary">YOLGECEN</span>
           </h1>
-          <div class="subheading mb-5">Lyon/FRANCE
+          <hr>
+          <div class="subheading mb-5">Lyon/FRANCE, né le 15 septembre 1993, <span id="age" data-toggle="popover" title="Mon agê est calculé automatiquement."></span>
             <hr>
             <i class="fab fa-whatsapp"></i> WhatsApp :
             <a href="https://wa.me/33782809330/?text=Bonjour%2C%20j%27aimerais%20discuter%20avec%20vous." target="_blank">+33 (0)7 82 80 93 30</a><br>
-            <i class="fas fa-mobile"></i> Téléphone : <a href="tel:+33782809330">+33 (0)7 82 80 93 30</a><br>
-            <a href="mailto:yolgecen.konuralp@gmail.com">yolgecen.konuralp@gmail.com</a><br>
-            <a href="mailto:konuralp.yolgecen@cropandco.com">konuralp.yolgecen@cropandco.com</a><br>
-            <a href="mailto:konuralp.yolgecen@viacesi.fr">konuralp.yolgecen@viacesi.fr</a>
+            <i class="fas fa-mobile"></i> Téléphone : <a href="tel:+33782809330">+33 (0)7 82 80 93 30</a><hr>
+            <a href="mailto:yolgecen.konuralp@gmail.com" data-toggle="popover" title="Email personnel">yolgecen.konuralp@gmail.com</a><br>
+            <a href="mailto:konuralp.yolgecen@cropandco.com" data-toggle="popover" title="Email travail">konuralp.yolgecen@cropandco.com</a><br>
+            <a href="mailto:konuralp.yolgecen@viacesi.fr" data-toggle="popover" title="Email école">konuralp.yolgecen@viacesi.fr</a>
             <hr>
           </div>
-          <p class="lead mb-5">Etudiant en ingénierie des logiciels au <a href="https://lyon.cesi.fr/ecoles-formations-ingenieurs-alternance-manager/" target="_blank">CESI Ecully</a> en alternance chez <a href="http://www.cropandco.com/" target="_blank">CROP AND CO</a>.</p>
+          <p class="lead mb-5">Etudiant en ingénierie des logiciels au <a href="https://lyon.cesi.fr/ecoles-formations-ingenieurs-alternance-manager/" target="_blank" data-toggle="popover" title="Vous allez être redirigé vers le site de mon école.">CESI Ecully</a> en alternance chez <a href="http://www.cropandco.com/" target="_blank" data-toggle="popover" title="Vous allez être redirigé vers le site de mon entreprise.">CROP AND CO</a>.</p>
           <div class="social-icons">
             <a href="http://www.linkedin.com/in/konuralp-yolgecen-01100784" target="_blank">
               <i class="fab fa-linkedin-in"></i>
@@ -368,6 +399,6 @@
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <!-- Custom scripts for this template -->
-    <script src="js/resume.min.js"></script>
+    <script src="js/resume.js"></script>
   </body>
 </html>

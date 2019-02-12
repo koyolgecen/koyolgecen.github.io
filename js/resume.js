@@ -27,6 +27,24 @@
 
 })(jQuery); // End of use strict
 
+//popover pour voir les infos survol de souris
 $(function () {
-  $('[data-toggle="popover"]').popover()
+  $('[data-toggle="popover"]').popover({
+      placement: "auto",
+      trigger: "hover",
+      delay: { "show": 200, "hide": 200 },
+  })
+});
+
+//Calcul automatiquement age
+var birhtday = new Date(1993, 9-1, 15);
+
+var today = new Date();
+var age = Math.floor((today-birhtday) / (365.25 * 24 * 60 * 60 * 1000));
+$('#age').html(age +' ans.');
+$('#agePageTurkish').html(age +' yaşında.');
+//Fin calcul
+
+$('#my_carousel').carousel({
+  interval: 2000
 });
