@@ -195,3 +195,8 @@ a:hover, a:focus, a:active {
 .popover {
   background-color: #BD5D38 !important;
 }
+
+#my_carousel2{
+    width: 300px;
+    height: 200px;
+}

@@ -45,6 +45,13 @@ $('#age').html(age +' ans.');
 $('#agePageTurkish').html(age +' yaşında.');
 //Fin calcul
 
-$('#my_carousel').carousel({
+$('#my_carousel, #my_carousel2').carousel({
   interval: 2000
+});
+
+$(function() {
+  $('.pop').on('click', function() {
+    $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+    $('#imagemodal').modal('show');
+  });
 });
