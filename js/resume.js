@@ -45,13 +45,34 @@ $('#age').html(age +' ans.');
 $('#agePageTurkish').html(age +' yaşında.');
 //Fin calcul
 
+//le temps de defilement image
 $('#my_carousel, #my_carousel2').carousel({
   interval: 2000
 });
 
+//pour afficher image dans une fenetre
 $(function() {
   $('.pop').on('click', function() {
     $('.imagepreview').attr('src', $(this).find('img').attr('src'));
     $('#imagemodal').modal('show');
   });
+});
+
+//pour animation nom et prenom
+anime.timeline({loop: true})
+    .add({
+      targets: '.ml15 .animate',
+      scale: [14,1],
+      opacity: [0,1],
+      easing: "easeOutCirc",
+      duration: 1500,
+      delay: function(el, i) {
+        return 800 * i;
+      }
+    }).add({
+  targets: '.ml15',
+  opacity: 0,
+  duration: 1000,
+  easing: "easeOutExpo",
+  delay: 10000
 });

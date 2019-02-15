@@ -201,3 +201,12 @@ a:hover, a:focus, a:active {
     width: 300px;
     height: 200px;
 }
+
+.ml15 {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.ml15 .animate {
+  display: inline-block;
+  line-height: 1em;
+}
