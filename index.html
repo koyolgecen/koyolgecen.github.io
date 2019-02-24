@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,6 +17,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="vendor/vivify/vivify.min.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     <link href="css/resume.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132921949-1"></script>
@@ -94,7 +96,7 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdown09">
               <a class="dropdown-item vivify driveInRight delay-100" href="indexTurkish.html"><span class="flag-icon flag-icon-tr"> </span>  Türkçe</a>
-              <a class="dropdown-item vivify driveInLeft delay-200" href="index.html"><span class="flag-icon flag-icon-gb"> </span>  English</a>
+              <a class="dropdown-item vivify driveInLeft delay-200" href="index.html"><span class="flag-icon flag-icon-gb"> </span>  English <span class="text-muted">(Coming soon <i class="em em-male-technologist"></i>)</span></a>
             </div>
           </li>
         </ul>
@@ -138,8 +140,8 @@
       <hr class="m-0">
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
         <div class="my-auto">
-          <h2 class="mb-5">expériences professionnales</h2>
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <h2 class="mb-5" data-aos="fade-down">expériences professionnales</h2>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5" data-aos="fade-up">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Volontaire en mission I.C.T. (Information Communication Technologie)</h3>
               <div class="subheading mb-3">
@@ -152,7 +154,7 @@
               <span class="text-primary">A compter du Mai 2019 - Juillet 2019</span>
               </div>
           </div>
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-item d-flex flex-column flex-md-row mb-5" data-aos="fade-up">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Développeur informatique</h3>
               <div class="subheading mb-3">
@@ -168,26 +170,26 @@
             <div class="resume-date text-md-right">
               <span class="text-primary">Septembre 2018 - Présent</span>
               <hr>
-              <div id="my_carousel2" class="carousel slide" data-ride="false">
+              <div id="my_carousel2" class="carousel slide my_carousel" data-ride="false">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <a class="js-scroll-trigger pop">
-                      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/photos_professional/1902%20CCO%20(9).jpg" alt="photo cco1">
+                      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/photos_professional/cco/1902%20CCO%20(9).jpg" alt="photo cco1">
                     </a>
                   </div>
                   <div class="carousel-item">
                     <a class="js-scroll-trigger pop">
-                      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/photos_professional/1902%20CCO%20(25).jpg" alt="photo cco2">
+                      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/photos_professional/cco/1902%20CCO%20(25).jpg" alt="photo cco2">
                     </a>
                   </div>
                   <div class="carousel-item">
                     <a class="js-scroll-trigger pop">
-                      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/photos_professional/1902%20CCO%20(38).jpg" alt="photo cco3">
+                      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/photos_professional/cco/1902%20CCO%20(38).jpg" alt="photo cco3">
                     </a>
                   </div>
                   <div class="carousel-item">
                     <a class="js-scroll-trigger pop">
-                      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/photos_professional/1902%20CCO%20(230).jpg" alt="photo cco4">
+                      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/photos_professional/cco/1902%20CCO%20(230).jpg" alt="photo cco4">
                     </a>
                   </div>
                   <div class="carousel-item">
@@ -207,7 +209,7 @@
               </div>
             </div>
           </div>
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-item d-flex flex-column flex-md-row mb-5" data-aos="fade-up">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Modèle</h3>
               <div class="subheading mb-3">
@@ -220,9 +222,42 @@
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">Janvier 2017 - Août 2018</span>
+              <hr>
+              <div id="my_carousel3" class="carousel slide my_carousel" data-ride="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <a class="js-scroll-trigger pop">
+                      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/photos_professional/hollister/013.jpg" alt="photo hollister4">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a class="js-scroll-trigger pop">
+                      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/photos_professional/hollister/IMG_2165.JPG" alt="photo hollister2">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a class="js-scroll-trigger pop">
+                      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/photos_professional/hollister/IMG_2168.JPG" alt="photo hollister3">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a class="js-scroll-trigger pop">
+                      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/photos_professional/hollister/IMG_2170.JPG" alt="photo hollister1">
+                    </a>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#my_carousel3" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#my_carousel3" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-item d-flex flex-column flex-md-row mb-5" data-aos="fade-up">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Volontaire en mission I.C.T. (Information Communication Technologie)</h3>
               <div class="subheading mb-3">
@@ -237,9 +272,47 @@
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">Mai à Juin 2016</span>
+              <hr>
+              <div id="my_carousel4" class="carousel slide my_carousel" data-ride="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <a class="js-scroll-trigger pop">
+                      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/photos_professional/euro2016/portrait.jpg" alt="photo portrait">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a class="js-scroll-trigger pop">
+                      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/photos_professional/euro2016/badge.jpg" alt="photo badgeEURO2016">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a class="js-scroll-trigger pop">
+                      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/photos_professional/euro2016/media.JPG" alt="photo mediaEURO2016">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a class="js-scroll-trigger pop">
+                      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/photos_professional/euro2016/stade.jpg" alt="photo stade">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a class="js-scroll-trigger pop">
+                      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/photos_professional/euro2016/ceremonie.jpg" alt="photo ceremonie">
+                    </a>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#my_carousel4" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#my_carousel4" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-item d-flex flex-column flex-md-row mb-5" data-aos="fade-up">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Evènementiel - Animation commerciale</h3>
               <div class="subheading mb-3">
@@ -258,9 +331,37 @@
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">2016 - 2018</span>
+              <hr>
+              <div id="my_carousel5" class="carousel slide my_carousel" data-ride="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <a class="js-scroll-trigger pop">
+                      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/photos_professional/animation/specialT.jpg" alt="photo specialt">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a class="js-scroll-trigger pop">
+                      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/photos_professional/animation/cartenoire.jpg" alt="photo cartenoire">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a class="js-scroll-trigger pop">
+                      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/photos_professional/animation/lavazza.jpg" alt="photo lavazza">
+                    </a>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#my_carousel5" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#my_carousel5" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-item d-flex flex-column flex-md-row mb-5" data-aos="fade-up">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Chef de service - Chef de caisse</h3>
               <div class="subheading mb-3">
@@ -281,8 +382,8 @@
       <hr class="m-0">
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
         <div class="my-auto">
-          <h2 class="mb-5">Formations</h2>
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <h2 class="mb-5" data-aos="fade-right">Formations</h2>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5" data-aos="fade-left">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">
                 <img class="img-fluid mx-auto mb-2" src="img/icons_company/Cesi_Logo_ALTERNANCE_RVB-360x187.png" alt="logo CESI"><br>
@@ -295,7 +396,7 @@
               <span class="text-primary">Septembre 2018 - Septembre 2020</span>
             </div>
           </div>
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-item d-flex flex-column flex-md-row mb-5" data-aos="fade-right">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">
                 <img class="img-fluid mx-auto mb-2" src="img/icons_company/logo_UCA_long_LR_RVB.jpg" alt="logo UCA"><br>
@@ -310,7 +411,7 @@
               <span class="text-primary">2015 - 2018</span>
             </div>
           </div>
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-item d-flex flex-column flex-md-row mb-5" data-aos="fade-left">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">
                 <img class="img-fluid mx-auto mb-2" src="img/icons_company/ubp.png" alt="logo UBP"><br>
@@ -325,7 +426,7 @@
               <span class="text-primary">2012 - 2014</span>
             </div>
           </div>
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-item d-flex flex-column flex-md-row mb-5" data-aos="fade-right">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">
                 <img class="img-fluid mx-auto mb-2" src="img/icons_company/logo-cavilam-ecole.png" alt="logo cavilam"><br>
@@ -340,7 +441,7 @@
               <span class="text-primary">2012 - 2013 (S1)</span>
             </div>
           </div>
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-item d-flex flex-column flex-md-row mb-5" data-aos="fade-left">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">
                 <img class="img-fluid mx-auto mb-2" src="img/icons_company/brand.gif" alt="logo Ahmet rustu lisesi"><br>
@@ -367,9 +468,9 @@
       <hr class="m-0">
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
         <div class="my-auto">
-          <h2 class="mb-5">Compétences</h2>
-          <div class="subheading mb-3">Compétences informatique</div>
-          <ul class="list-inline dev-icons">
+          <h2 class="mb-5" data-aos="flip-left">Compétences</h2>
+          <div class="subheading mb-3" data-aos="flip-right">Compétences informatique</div>
+          <ul class="list-inline dev-icons" data-aos="flip-up">
             <li class="list-inline-item">
               <i class="fas fa-code" data-toggle="popover" title="Développement"></i> :
             </li>
@@ -482,13 +583,13 @@
       <hr class="m-0">
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
         <div class="my-auto">
-          <h2 class="mb-5">Activités & Hobbies</h2>
-          <b class="text-primary">Sports: </b>
-          Régulière de musculation en salle, pratique du football, natation.<hr>
-          <b class="text-primary">Internet: </b>
-          Actualités, réseaux sociaux.<hr>
-          <b class="text-primary">Divers: </b>
-          Voyager, découvrir de nouvelles cultures, musique, cinéma.
+          <h2 class="mb-5" data-aos="zoom-in">Activités & Hobbies</h2>
+          <b class="text-primary" data-aos="zoom-in-up">Sports: </b>
+          <span data-aos="zoom-in-up">Régulière de musculation en salle, pratique du football, natation.</span><hr>
+          <b class="text-primary" data-aos="zoom-in-down">Internet: </b>
+          <span data-aos="zoom-in-down">Actualités, réseaux sociaux.</span><hr>
+          <b class="text-primary" data-aos="zoom-in-left">Divers: </b>
+          <span data-aos="zoom-in-left">Voyager, découvrir de nouvelles cultures, musique, cinéma.</span>
         </div>
       </section>
     </div>
@@ -498,6 +599,7 @@
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="vendor/anime/anime.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Custom scripts for this template -->
     <script src="js/resume.js"></script>
   </body>

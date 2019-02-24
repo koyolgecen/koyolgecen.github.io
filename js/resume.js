@@ -45,12 +45,12 @@ $('#age').html(age +' ans.');
 $('#agePageTurkish').html(age +' yaşında.');
 //Fin calcul
 
-//le temps de defilement image
-$('#my_carousel, #my_carousel2').carousel({
+//le temps de defilement image carousel
+$('#my_carousel, #my_carousel2, #my_carousel3, #my_carousel4, #my_carousel5').carousel({
   interval: 2000
 });
 
-//pour afficher image dans une fenetre
+//pour afficher limage dans une fenetre quand on clique dessus
 $(function() {
   $('.pop').on('click', function() {
     $('.imagepreview').attr('src', $(this).find('img').attr('src'));
@@ -76,3 +76,6 @@ anime.timeline({loop: true})
   easing: "easeOutExpo",
   delay: 10000
 });
+
+//initialisation de data-aos pour les animations
+AOS.init();
