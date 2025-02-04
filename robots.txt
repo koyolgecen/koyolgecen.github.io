@@ -1,1 +1,1 @@
-Sitemap: http://konuralpyolgecen.me/emplacement_sitemap.xml
+Sitemap: https://koyolgecen.github.io/sitemap.xml
