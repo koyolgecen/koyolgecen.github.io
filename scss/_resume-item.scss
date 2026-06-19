@@ -1,11 +1,69 @@
 section.resume-section {
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
-  max-width: 75rem;
+  position: relative;
+  width: 100%;
+  max-width: none;
+  padding: 5rem clamp(2rem, 4.5vw, 5.5rem) !important;
+
   .resume-item {
-    .resume-content {}
+    position: relative;
+    gap: 2rem;
+    margin-bottom: 2.25rem !important;
+    padding: 1.35rem 0 1.35rem 1.35rem;
+    border-left: 3px solid rgba($primary, 0.25);
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 1.85rem;
+      left: -0.48rem;
+      width: 0.78rem;
+      height: 0.78rem;
+      background: $accent;
+      border: 3px solid #f6f8fb;
+      border-radius: 50%;
+      box-shadow: 0 0 0 0.28rem rgba($accent, 0.18);
+    }
+
+    .resume-content {
+      min-width: 0;
+
+      p,
+      li {
+        line-height: 1.7;
+      }
+
+      h5 {
+        margin-top: 1.15rem;
+        color: $primary;
+        font-size: 1.08rem;
+      }
+
+      img {
+        max-height: 5.2rem;
+        max-width: 13rem;
+        width: auto;
+        object-fit: contain;
+        padding: 0.55rem;
+        background: $white;
+        border: 1px solid rgba($ink, 0.08);
+        border-radius: 0.8rem;
+        box-shadow: 0 0.8rem 1.8rem rgba($ink, 0.07);
+      }
+    }
+
     .resume-date {
       min-width: none;
+
+      .text-primary {
+        display: inline-flex;
+        padding: 0.45rem 0.65rem;
+        color: $ink !important;
+        font-size: 0.86rem;
+        font-weight: 900;
+        background: rgba($accent, 0.15);
+        border: 1px solid rgba($accent, 0.32);
+        border-radius: 999px;
+      }
     }
   }
 }
@@ -13,6 +71,8 @@ section.resume-section {
   section.resume-section {
     min-height: 100vh;
     .resume-item {
+      padding-left: 1.75rem;
+
       .resume-date {
         min-width: 18rem;
       }
@@ -21,7 +81,7 @@ section.resume-section {
 }
 @media (min-width: 992px) {
   section.resume-section {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
   }
 }

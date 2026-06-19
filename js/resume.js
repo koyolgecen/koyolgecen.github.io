@@ -37,12 +37,13 @@ $(function () {
 });
 
 //Calcul automatiquement age
-var birhtday = new Date(1993, 9-1, 15);
+var birthday = new Date(1993, 9-1, 15);
 
 var today = new Date();
-var age = Math.floor((today-birhtday) / (365.25 * 24 * 60 * 60 * 1000));
-$('#age').html(age +' ans.');
-$('#agePageTurkish').html(age +' yaşında.');
+var age = Math.floor((today-birthday) / (365.25 * 24 * 60 * 60 * 1000));
+$('#age').html(age +' ans');
+$('#agePageTurkish').html(age +' yaşında');
+$('#agePageEnglish').html(age +' years old');
 //Fin calcul
 
 //le temps de defilement image carousel
@@ -59,23 +60,21 @@ $(function() {
 });
 
 //pour animation nom et prenom
-anime.timeline({loop: true})
+anime.timeline({loop: false})
     .add({
       targets: '.ml15 .animate',
-      scale: [14,1],
+      translateY: [24, 0],
       opacity: [0,1],
-      easing: "easeOutCirc",
-      duration: 1500,
+      easing: "easeOutExpo",
+      duration: 900,
       delay: function(el, i) {
-        return 800 * i;
+        return 180 * i;
       }
-    }).add({
-  targets: '.ml15',
-  opacity: 0,
-  duration: 1000,
-  easing: "easeOutExpo",
-  delay: 10000
-});
+    });
 
 //initialisation de data-aos pour les animations
-AOS.init();
+AOS.init({
+  duration: 700,
+  once: true,
+  offset: 80
+});

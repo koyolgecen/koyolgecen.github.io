@@ -72,31 +72,30 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item vivify popIn delay-100">
-            <a class="nav-link js-scroll-trigger" href="#about">A propos <i class="fas fa-portrait"></i></a>
+            <a class="nav-link js-scroll-trigger" href="#about"><i class="fas fa-portrait"></i>A propos</a>
           </li>
           <li class="nav-item vivify popInLeft delay-200">
-            <a class="nav-link js-scroll-trigger" href="#experience">Expériences professionnelles <i class="fas fa-briefcase"></i></a>
+            <a class="nav-link js-scroll-trigger" href="#experience"><i class="fas fa-briefcase"></i>Expériences professionnelles</a>
           </li>
           <li class="nav-item vivify popInRight delay-300">
-            <a class="nav-link js-scroll-trigger" href="#education">Formations <i class="fas fa-graduation-cap"></i></a>
+            <a class="nav-link js-scroll-trigger" href="#education"><i class="fas fa-graduation-cap"></i>Formations</a>
           </li>
           <li class="nav-item vivify popInBottom delay-400">
-            <a class="nav-link js-scroll-trigger" href="#skills">Compétences <i class="fas fa-wrench"></i></a>
+            <a class="nav-link js-scroll-trigger" href="#skills"><i class="fas fa-wrench"></i>Compétences</a>
           </li>
           <li class="nav-item vivify popInTop delay-500">
-            <a class="nav-link js-scroll-trigger" href="#interests">Centres d'intérêt <i class="fas fa-stopwatch"></i></a>
+            <a class="nav-link js-scroll-trigger" href="#interests"><i class="fas fa-stopwatch"></i>Centres d'intérêt</a>
           </li>
           <li class="nav-item vivify swoopInRight delay-600">
-            <a class="nav-link js-scroll-trigger" href="https://paypal.me/konuralpyolgecen" target="_blank">Faire un don <i class="fab fa-paypal"></i></a>
+            <a class="nav-link" href="mailto:yolgecen.konuralp@gmail.com"><i class="fas fa-paper-plane"></i>Contact</a>
           </li>
           <li class="nav-item dropdown vivify swoopInLeft delay-700">
             <a class="nav-link dropdown-toggle" href="index.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Choisir la langue
-              <span class="flag-icon flag-icon-fr" id="french"> </span>
+              <span class="flag-icon flag-icon-fr" id="french"> </span>Choisir la langue
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdown09">
               <a class="dropdown-item vivify driveInRight delay-100" href="indexTurkish.html"><span class="flag-icon flag-icon-tr"> </span>  Türkçe</a>
-              <a class="dropdown-item vivify driveInLeft delay-200" href="index.html"><span class="flag-icon flag-icon-gb"> </span>  English <span class="text-muted">(Coming soon <i class="em em-male-technologist"></i>)</span></a>
+              <a class="dropdown-item vivify driveInLeft delay-200" href="indexEnglish.html"><span class="flag-icon flag-icon-gb"> </span>  English</a>
             </div>
           </li>
         </ul>
@@ -105,36 +104,54 @@
     <div class="container-fluid p-0">
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
-          <h1 class="ml15">
-            <span class="animate">Konuralp</span>
-            <span class="text-primary animate">YOLGECEN</span>
-          </h1>
-          <hr>
-          <div class="subheading mb-5">Lyon/FRANCE, né le 15 septembre 1993, <span id="age" data-toggle="popover" title="Mon agê est calculé automatiquement."></span>
-            <hr>
-            <i class="fab fa-whatsapp vivify infinite popIn duration-5000"></i> WhatsApp :
-            <a href="https://wa.me/33782809330/?text=Bonjour%2C%20j%27aimerais%20discuter%20avec%20vous." target="_blank" data-toggle="popover" title="Ecrivez-moi sur WhatsApp">+33 (0)7 82 80 93 30</a><br>
-            <i class="fas fa-mobile vivify infinite popIn duration-5000"></i> Téléphone : <a href="tel:+33782809330" data-toggle="popover" title="Appelez-moi">+33 (0)7 82 80 93 30</a><hr>
-            <a href="mailto:yolgecen.konuralp@gmail.com" data-toggle="popover" title="Email personnel">yolgecen.konuralp@gmail.com</a><br>
-            <hr>
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <div class="eyebrow">Freelance PHP Symfony · Lyon, France</div>
+              <h1 class="ml15">
+                <span class="animate">Konuralp</span>
+                <span class="text-primary animate">YOLGECEN</span>
+              </h1>
+              <div class="subheading mb-4">Développeur Full-Stack PHP Symfony · Architecture web · API · DevOps</div>
+              <p class="lead mb-4">
+                Je conçois, modernise et fiabilise des applications web Symfony à fort enjeu métier. Mon approche combine architecture propre, refactoring pragmatique, intégrations API solides, performance mesurable et déploiements maîtrisés pour transformer un produit complexe en plateforme robuste, lisible et scalable.
+              </p>
+              <div class="hero-tags">
+                <span>Symfony 3.x -> 8.1</span>
+                <span>Symfony 7.4 LTS</span>
+                <span>Modernisation legacy</span>
+                <span>API Platform & integrations</span>
+                <span>MySQL / Elasticsearch</span>
+                <span>Docker · CI/CD · GitLab</span>
+              </div>
+              <div class="code-ribbon" aria-label="Stack technique">
+                <span class="prompt">$</span>
+                <span>composer require symfony/runtime && deploy --zero-downtime</span>
+              </div>
+              <div class="contact-strip">
+                <span>Lyon/France · <span id="age" data-toggle="popover" title="Mon âge est calculé automatiquement."></span></span>
+                <a href="https://wa.me/33782809330/?text=Bonjour%2C%20j%27aimerais%20discuter%20avec%20vous." target="_blank" data-toggle="popover" title="Ecrivez-moi sur WhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <a href="tel:+33782809330" data-toggle="popover" title="Appelez-moi"><i class="fas fa-mobile"></i> +33 7 82 80 93 30</a>
+                <a href="mailto:yolgecen.konuralp@gmail.com" data-toggle="popover" title="Email personnel"><i class="fas fa-envelope"></i> Email</a>
+              </div>
+            </div>
+            <aside class="hero-panel" aria-label="Profil professionnel">
+              <img class="hero-photo" src="img/profile3.jpg" alt="Konuralp Yolgecen">
+              <div class="hero-status">Disponible pour missions Symfony exigeantes</div>
+              <div class="hero-metrics">
+                <div><strong>9+</strong><span>ans web</span></div>
+                <div><strong>BAC+5</strong><span>Manager en systèmes d'information</span></div>
+                <div><strong>BAC+4</strong><span>Responsable en ingénierie des logiciels</span></div>
+                <div><strong>FR/TR</strong><span>bilingue</span></div>
+              </div>
+              <div class="kyit-brand">
+                <img src="img/icons_company/kyit_logo.jpg" alt="K.Y.I.T.">
+                <div>
+                  <strong>K.Y.I.T.</strong>
+                  <span>Freelance PHP Symfony</span>
+                </div>
+              </div>
+            </aside>
           </div>
-          <p class="lead mb-5">
-              Auto-entrepreneur <b>K.Y.I.T.</b><br>
-              Développeur Full-Stack PHP Symfony – Expert en Solutions Web <hr>
-              Passionné par le développement web et fort de plusieurs années d’expérience, je suis <b>développeur full-stack spécialisé en PHP/Symfony</b>.
-              <br>Mon objectif ? <br> 🚀 Concevoir des <b>applications web performantes, évolutives et sécurisées</b>, adaptées aux besoins spécifiques de chaque projet.
-              <br><br>
-              En tant que freelance, j’accompagne les entreprises dans leur transformation digitale, en développant des solutions sur mesure :<br>
-              <b>✅ Back-end robuste et optimisé</b><br>
-              <b>✅ Front-end réactif et moderne</b><br>
-              <b>✅ Gestion avancée des bases de données</b><br>
-              <b>✅ Infrastructure & DevOps</b><br><br>
-
-              Doté d’une <b>approche agile et pragmatique</b>, je travaille en collaboration avec mes clients pour offrir des solutions <b>efficaces et innovantes</b>. Mon expérience en <b>API, architecture logicielle et automatisation</b> me permet d'optimiser les performances et la sécurité des applications.
-              <br><br>
-              <b>Besoin d’un expert Symfony pour votre projet ?</b><br>
-              📩 Contactez-moi et transformons vos idées en solutions concrètes !<br>
-          </p>
           <div class="social-icons">
             <a href="http://www.linkedin.com/in/konuralp-yolgecen" target="_blank" class="vivify delay-200 fadeInBottom">
               <i class="fab fa-linkedin-in"></i>
@@ -145,8 +162,8 @@
             <a href="https://www.instagram.com/yolgecen.konuralp/" target="_blank" class="vivify delay-400 fadeInBottom">
               <i class="fab fa-instagram"></i>
             </a>
-            <a href="https://paypal.me/konuralpyolgecen" target="_blank" class="vivify delay-500 fadeInBottom">
-                <i class="fab fa-cc-paypal"></i>
+            <a href="mailto:yolgecen.konuralp@gmail.com" class="vivify delay-500 fadeInBottom">
+                <i class="fas fa-envelope"></i>
             </a>
           </div>
         </div>
@@ -179,37 +196,38 @@
 
               <h5>🚀 Modernisation et refonte technique</h5>
               <ul>
-                <li><b>Migration Symfony 4.4 → 5.4</b> pour améliorer la sécurité, la compatibilité et la performance de l’application</li>
-                <li>Optimisation du <b>code legacy</b>, amélioration des temps de réponse et réduction des requêtes coûteuses</li>
-                <li>Refactorisation des composants critiques pour garantir une <b>meilleure maintenabilité</b></li>
+                <li><b>Migrations Symfony 4.4 → 5.4 puis 5.4 → 7.4 LTS</b>, avec nettoyage des dépréciations, adaptation des bundles et sécurisation du socle applicatif</li>
+                <li>Modernisation progressive du <b>code legacy</b> : typage, découpage des responsabilités, services plus explicites et réduction de la dette technique</li>
+                <li>Optimisation des <b>temps de réponse</b> et réduction des requêtes coûteuses sur les parcours métier sensibles</li>
+                <li>Refactorisation de composants critiques pour améliorer la <b>maintenabilité</b>, la testabilité et la lisibilité du domaine</li>
               </ul>
 
               <h5>🔗 Intégration et automatisation de services tiers</h5>
               <ul>
                 <li><b>Connexion à des API stratégiques</b> : e-Attestations 365, Ellisphere, achat-public, Provigis, HappyOrNot, MARCO (Agysoft), SharePoint</li>
-                <li>Mise en place d’un <b>processus d’authentification sécurisé</b> pour les échanges de données</li>
-                <li>Développement d’un <b>mécanisme d’importation et de synchronisation</b> pour assurer la mise à jour en temps réel des informations</li>
+                <li>Mise en place de flux d’<b>authentification sécurisés</b>, de mapping de données et de traitements d’erreurs exploitables</li>
+                <li>Développement de mécanismes d’<b>import, synchronisation et reprise</b> pour fiabiliser les échanges entre systèmes</li>
               </ul>
 
               <h5>📦 Développement de nouveaux modules</h5>
               <ul>
-                <li><b>Conception et développement du module "Commandes"</b> basé sur les <b>BPU (Bordereaux de Prix Unitaire)</b>, intégrant les fournisseurs et les contrats</li>
-                <li>Création d’une interface utilisateur dynamique pour <b>faciliter la gestion des commandes</b> et optimiser les workflows internes</li>
-                <li>Implémentation de <b>règles de gestion avancées</b> pour automatiser les calculs et la validation des commandes</li>
+                <li><b>Conception et développement du module "Commandes"</b> basé sur les <b>BPU (Bordereaux de Prix Unitaire)</b>, fournisseurs, contrats et règles métier</li>
+                <li>Création d’interfaces dynamiques pour fluidifier la <b>gestion des commandes</b> et réduire les actions manuelles</li>
+                <li>Implémentation de règles de calcul, validation et contrôle pour sécuriser les workflows achats</li>
               </ul>
 
               <h5>📊 Traitement et exploitation des données</h5>
               <ul>
-                <li>Automatisation des <b>exports de données personnalisés</b> via MySQL pour faciliter l’analyse et la prise de décision</li>
-                <li>Développement de <b>tableaux de bord analytiques</b>, optimisant la visualisation des KPI pour les utilisateurs métiers</li>
-                <li>Mise en place de <b>requêtes optimisées et d’indexation avancée</b> pour accélérer les performances des bases de données</li>
+                <li>Automatisation d’<b>exports de données personnalisés</b> via MySQL pour l’analyse métier et le pilotage opérationnel</li>
+                <li>Développement de tableaux de bord et indicateurs pour rendre les KPI plus accessibles aux utilisateurs métiers</li>
+                <li>Optimisation de requêtes, indexation ciblée et analyse des volumes pour accélérer les traitements critiques</li>
               </ul>
 
               <h5>⚡ Agilité, maintenance et amélioration continue</h5>
               <ul>
                 <li>Approche <b>Agile Scrum</b>, en collaboration avec <b>1 CTO, 1 PO, 1 QA et 5 développeurs (dont 1 Lead)</b></li>
-                <li>Correction des bugs et <b>optimisation des performances</b> pour améliorer la fluidité et l’expérience utilisateur</li>
-                <li>Déploiements <b>CI/CD via GitLab</b> pour assurer une livraison continue et une mise en production fiable</li>
+                <li>Correction de bugs, analyse d’incidents et <b>optimisation continue</b> pour stabiliser l’expérience utilisateur</li>
+                <li>Déploiements <b>CI/CD via GitLab</b>, revues de code et coordination avec la QA pour fiabiliser les mises en production</li>
               </ul>
 
             </div>
@@ -621,9 +639,16 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
         <div class="my-auto">
           <h2 class="mb-5" data-aos="flip-left">Compétences</h2>
+          <div class="code-ribbon code-ribbon-inline" data-aos="fade-up" aria-label="Code mindset">
+            <pre><code>try {
+    buildLikeApple();
+} catch (LegacyCodeException $e) {
+    refactorLikeAConsultant();
+}</code></pre>
+          </div>
           <div class="subheading mb-3" data-aos="flip-right">Compétences informatique</div>
           <ul class="list-inline dev-icons" data-aos="flip-up">
-            <li class="list-inline-item">
+            <li class="list-inline-item skill-break">
               <i class="fas fa-code" data-toggle="popover" title="Développement"></i> :
             </li>
             <li class="list-inline-item">
@@ -660,7 +685,7 @@
               <img src="img/icons/Sql.png" data-toggle="popover" title="SQL" alt="sql">
             </li>
             <br>
-            <li class="list-inline-item">
+            <li class="list-inline-item skill-break">
               <i class="fas fa-desktop" data-toggle="popover" title="Informatique"></i> :
             </li>
             <li class="list-inline-item">
@@ -688,7 +713,7 @@
               <img src="img/icons/Outlook.png" data-toggle="popover" title="Outlook" alt="outlook">
             </li>
             <br>
-            <li class="list-inline-item">
+            <li class="list-inline-item skill-break">
               <i class="fas fa-code-branch" data-toggle="popover" title="Versionning, Environnement de développement (IDE) et d'autres outils"></i> :
             </li>
             <li class="list-inline-item">
@@ -726,8 +751,21 @@
             </li>
             <hr>
             <div class="subheading mb-3">Langues</div>
-            <li class="list-inline-item">
-              <i class="fas fa-language"></i> : <i class="subheading ">Français(courant)</i> <i class="flag-icon flag-icon-fr"></i>, <i class="subheading">Turc(langue maternelle)</i> <i class="flag-icon flag-icon-tr"></i>, <i class="subheading">Anglais(intermédiaire)</i> <i class="flag-icon flag-icon-gb"></i>
+            <li class="list-inline-item language-line">
+              <div class="language-grid">
+                <div class="language-card">
+                  <span class="flag-icon flag-icon-fr"></span>
+                  <div><strong>Français</strong><span>Courant</span></div>
+                </div>
+                <div class="language-card">
+                  <span class="flag-icon flag-icon-tr"></span>
+                  <div><strong>Turc</strong><span>Langue maternelle</span></div>
+                </div>
+                <div class="language-card">
+                  <span class="flag-icon flag-icon-gb"></span>
+                  <div><strong>Anglais</strong><span>Intermédiaire</span></div>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -736,6 +774,13 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
         <div class="my-auto">
           <h2 class="mb-5" data-aos="zoom-in">Centres d'intérêt</h2>
+          <div class="code-ribbon code-ribbon-inline" data-aos="fade-up" aria-label="Life motto">
+            <span class="prompt">echo</span>
+            <span class="code-lines">
+              <span>"Life has no Ctrl+Z,</span>
+              <span>so commit with intention.";</span>
+            </span>
+          </div>
           <b class="text-primary" data-aos="zoom-in-up">⚽ Football </b><br>
           <ul>
             <li data-aos="zoom-in-up">Passionné de football, à la fois <b>pratiquant et spectateur</b></li>
