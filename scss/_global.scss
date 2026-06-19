@@ -4,6 +4,8 @@ html {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   background: #f6f8fb;
 }
 
@@ -14,6 +16,8 @@ body {
   padding-top: 54px;
   color: $muted;
   overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   background:
     linear-gradient(90deg, rgba($primary, 0.05), rgba($accent, 0.05)),
     #f6f8fb;
