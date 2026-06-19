@@ -110,8 +110,7 @@
     padding: 0.65rem 0.85rem;
     align-items: center;
     box-sizing: border-box;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
+    overflow: visible;
 
     .navbar-brand {
       min-width: 1px;
@@ -133,9 +132,12 @@
 
     .navbar-collapse {
       flex-basis: 100%;
-      max-height: calc(100vh - 4.5rem);
-      overflow-y: auto;
-      -webkit-overflow-scrolling: touch;
+
+      &.show {
+        max-height: calc(100vh - 4.5rem);
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+      }
     }
 
     .navbar-nav .nav-item .nav-link {

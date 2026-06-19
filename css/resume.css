@@ -2,8 +2,6 @@ html {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
   background: #f6f8fb;
 }
 
@@ -14,8 +12,6 @@ body {
   padding-top: 54px;
   color: #64748b;
   overflow-x: hidden;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
   background: linear-gradient(90deg, rgba(15, 118, 110, 0.05), rgba(185, 133, 47, 0.05)), #f6f8fb;
 }
 
@@ -626,8 +622,7 @@ p.lead {
     padding: 0.65rem 0.85rem;
     align-items: center;
     box-sizing: border-box;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
+    overflow: visible;
   }
 
   #sideNav .navbar-brand {
@@ -650,6 +645,9 @@ p.lead {
 
   #sideNav .navbar-collapse {
     flex-basis: 100%;
+  }
+
+  #sideNav .navbar-collapse.show {
     max-height: calc(100vh - 4.5rem);
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
