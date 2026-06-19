@@ -1,5 +1,14 @@
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  background: #f6f8fb;
+}
+
 body {
   font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  width: 100%;
+  max-width: 100%;
   padding-top: 54px;
   color: #64748b;
   overflow-x: hidden;
@@ -599,9 +608,41 @@ p.lead {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
   .phoneNoDisplay {
     display: none;
+  }
+
+  #sideNav {
+    left: 0;
+    right: 0;
+    width: 100%;
+    min-height: 4rem;
+    padding: 0.65rem 0.85rem;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  #sideNav .navbar-brand {
+    min-width: 1px;
+    min-height: 2.5rem;
+    padding: 0;
+    margin-right: auto;
+  }
+
+  #sideNav .navbar-toggler {
+    display: inline-flex;
+    width: 2.75rem;
+    height: 2.5rem;
+    margin-left: auto;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.7rem;
+  }
+
+  #sideNav .navbar-collapse {
+    flex-basis: 100%;
   }
 
   #sideNav .navbar-nav .nav-item .nav-link {
@@ -701,6 +742,16 @@ section.resume-section .resume-item .resume-date .text-primary {
   }
 }
 
+@media (max-width: 767px) {
+  section.resume-section {
+    padding: 4.25rem 1rem !important;
+  }
+
+  section.resume-section .resume-item {
+    padding-left: 1rem;
+  }
+}
+
 .bg-primary {
   background-color: #0f766e !important;
 }
@@ -739,7 +790,12 @@ hr {
     grid-template-columns: 1fr;
   }
 
+  .hero-copy {
+    order: 2;
+  }
+
   .hero-panel {
+    order: 1;
     max-width: 34rem;
   }
 }
@@ -773,5 +829,18 @@ hr {
 
   .language-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 991.98px) {
+  body {
+    background: #f6f8fb;
+  }
+
+  [data-aos="fade-left"],
+  [data-aos="fade-right"],
+  [data-aos="zoom-in-left"],
+  [data-aos="zoom-in-right"] {
+    transform: none !important;
   }
 }

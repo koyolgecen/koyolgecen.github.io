@@ -1,7 +1,16 @@
 // Global styling for this template
 
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  background: #f6f8fb;
+}
+
 body {
   @include body-font;
+  width: 100%;
+  max-width: 100%;
   padding-top: 54px;
   color: $muted;
   overflow-x: hidden;
@@ -513,7 +522,12 @@ p.lead {
     grid-template-columns: 1fr;
   }
 
+  .hero-copy {
+    order: 2;
+  }
+
   .hero-panel {
+    order: 1;
     max-width: 34rem;
   }
 }
@@ -547,5 +561,18 @@ p.lead {
 
   .language-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 991.98px) {
+  body {
+    background: #f6f8fb;
+  }
+
+  [data-aos="fade-left"],
+  [data-aos="fade-right"],
+  [data-aos="zoom-in-left"],
+  [data-aos="zoom-in-right"] {
+    transform: none !important;
   }
 }

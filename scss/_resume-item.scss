@@ -85,3 +85,13 @@ section.resume-section {
     padding-bottom: 4rem !important;
   }
 }
+
+@media (max-width: 767px) {
+  section.resume-section {
+    padding: 4.25rem 1rem !important;
+  }
+
+  section.resume-section .resume-item {
+    padding-left: 1rem;
+  }
+}
