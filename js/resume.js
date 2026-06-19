@@ -7,8 +7,9 @@
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
+        var navOffset = window.matchMedia('(max-width: 991.98px)').matches ? ($('#sideNav').outerHeight() || 0) : 0;
         $('html, body').animate({
-          scrollTop: (target.offset().top)
+          scrollTop: (target.offset().top - navOffset)
         }, 1000, "easeInOutExpo");
         return false;
       }
