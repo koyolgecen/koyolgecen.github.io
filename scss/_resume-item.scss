@@ -2,7 +2,12 @@ section.resume-section {
   position: relative;
   width: 100%;
   max-width: none;
+  scroll-margin-top: 4.5rem;
   padding: 5rem clamp(2rem, 4.5vw, 5.5rem) !important;
+
+  > .my-auto {
+    width: 100%;
+  }
 
   .resume-item {
     position: relative;
@@ -81,6 +86,7 @@ section.resume-section {
 }
 @media (min-width: 992px) {
   section.resume-section {
+    scroll-margin-top: 0;
     padding-top: 4rem !important;
     padding-bottom: 4rem !important;
   }

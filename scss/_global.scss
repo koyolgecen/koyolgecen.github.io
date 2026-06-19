@@ -522,13 +522,10 @@ p.lead {
     grid-template-columns: 1fr;
   }
 
-  .hero-copy {
-    order: 2;
-  }
-
   .hero-panel {
-    order: 1;
+    width: 100%;
     max-width: 34rem;
+    justify-self: center;
   }
 }
 
@@ -545,6 +542,10 @@ p.lead {
     gap: 2rem;
   }
 
+  .hero-copy {
+    order: 2;
+  }
+
   .contact-strip {
     align-items: flex-start;
     flex-direction: column;
@@ -556,7 +557,66 @@ p.lead {
   }
 
   .hero-panel {
-    max-width: none;
+    order: 1;
+    width: min(100%, 22rem);
+    max-width: 22rem;
+    padding: 0.9rem;
+    border-radius: 0.95rem;
+  }
+
+  .hero-panel:before {
+    top: 1.25rem;
+    right: 1.25rem;
+    font-size: 0.62rem;
+  }
+
+  .hero-photo {
+    height: clamp(12rem, 55vw, 16rem);
+    aspect-ratio: auto;
+    object-position: center 22%;
+  }
+
+  .hero-status {
+    margin: 0.75rem 0;
+    padding: 0.65rem;
+    font-size: 0.9rem;
+  }
+
+  .hero-metrics {
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+
+    div {
+      flex: 1 1 calc(50% - 0.5rem);
+      padding: 0.6rem;
+    }
+
+    strong {
+      font-size: 1rem;
+    }
+
+    span {
+      font-size: 0.65rem;
+    }
+  }
+
+  .kyit-brand {
+    gap: 0.7rem;
+    padding: 0.65rem;
+
+    img {
+      width: 3.25rem;
+      height: 3.25rem;
+      padding: 0.35rem;
+    }
+
+    strong {
+      font-size: 1rem;
+    }
+
+    span {
+      font-size: 0.7rem;
+    }
   }
 
   .language-grid {
@@ -569,10 +629,9 @@ p.lead {
     background: #f6f8fb;
   }
 
-  [data-aos="fade-left"],
-  [data-aos="fade-right"],
-  [data-aos="zoom-in-left"],
-  [data-aos="zoom-in-right"] {
+  [data-aos] {
+    opacity: 1 !important;
     transform: none !important;
+    transition: none !important;
   }
 }
